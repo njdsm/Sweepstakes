@@ -1,5 +1,4 @@
 from data_queue import Queue
-from sweepstake import Sweepstake
 
 
 class SweepstakesQueueManager:
