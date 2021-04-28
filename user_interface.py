@@ -10,5 +10,6 @@ def new_contestant(contestant):
     contestant.registration_number = get_random_number()
     return contestant
 
+
 def get_random_number():
     return random.randrange(100000, 999999)
