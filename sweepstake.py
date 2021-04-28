@@ -18,10 +18,17 @@ class Sweepstake:
         keys = list(self.contestants)
         winner = random.randrange(0, len(keys))
         winner = keys[winner]
-        print(winner)
         return self.contestants.get(winner)
 
     def print_contestant_info(self, contestant):
         print(contestant.first_name)
         print(contestant.last_name)
         print(contestant.email_address)
+
+    def announce_winner(self, winner):
+        for contestant in self.contestants:
+            if self.contestants[contestant].registration_number == winner.registration_number:
+                self.contestants[contestant].notify("You are the winner!")
+            else:
+                self.contestants[contestant].notify(f"Congrats to {winner.first_name} {winner.last_name}. "
+                                  f"They won the {self.name} sweepstake!")

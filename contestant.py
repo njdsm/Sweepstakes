@@ -8,6 +8,4 @@ class Contestant:
         self.registration_number = 0
 
     def notify(self, is_winner):
-        if is_winner:
-            return
-        pass
+        print(is_winner)

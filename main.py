@@ -12,10 +12,11 @@ def run_simulation():
     print(winner.first_name)
     print(winner.last_name)
     print(winner.email_address)
-    marketing_firm_creator = MarketingFirmCreator()
-    marketing_firm = MarketingFirm(marketing_firm_creator.choose_manager_type())
-    test = marketing_firm.create_sweepstakes("Test")
-    marketing_firm.manager.insert_sweepstakes(test)
+    #marketing_firm_creator = MarketingFirmCreator()
+    #marketing_firm = MarketingFirm(marketing_firm_creator.choose_manager_type())
+    #test = marketing_firm.create_sweepstakes("Test")
+    #marketing_firm.manager.insert_sweepstakes(test)
+    sweepstake.announce_winner(winner)
 
 
 
