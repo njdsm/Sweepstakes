@@ -1,4 +1,8 @@
-
+from sweepstake import Sweepstake
 
 def run_simulation():
-    pass
+    sweepstake = Sweepstake("Test_sweepstake")
+    sweepstake.register_contestant()
+
+
+run_simulation()

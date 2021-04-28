@@ -1,4 +1,5 @@
-
+import user_interface as ui
+from contestant import Contestant
 
 class Sweepstake:
     def __init__(self, name):
@@ -6,7 +7,8 @@ class Sweepstake:
         self.contestants = {}
 
     def register_contestant(self):
-        pass
+        contestant = ui.new_contestant(Contestant())
+        print(contestant.registration_number)
 
     def pick_winner(self):
         pass
