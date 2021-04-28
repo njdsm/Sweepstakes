@@ -1,11 +1,10 @@
 from sweepstakes_stack_manager import SweepstakesStackManager
 from sweepstakes_queue_manager import SweepstakesQueueManager
-from marketing_firm import MarketingFirm
 
 
 class MarketingFirmCreator:
     def __init__(self):
-        pass
+        self.choose_manager_type()
 
     def choose_manager_type(self):
         print("Which type of sweepstakes manager do you want to use?\n"

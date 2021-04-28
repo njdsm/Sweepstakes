@@ -29,7 +29,7 @@ class Sweepstake:
     def announce_winner(self, winner):
         for contestant in self.contestants:
             if self.contestants[contestant].registration_number == winner.registration_number:
-                self.contestants[contestant].notify("You are the winner!")
+                self.contestants[contestant].notify("You are the winner!", self.name)
             else:
                 self.contestants[contestant].notify(f"Congrats to {winner.first_name} {winner.last_name}. "
-                                                    f"They won the {self.name} sweepstake!")
+                                                    f"They won the {self.name} sweepstake!", self.name)

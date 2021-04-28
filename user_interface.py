@@ -13,3 +13,12 @@ def new_contestant(contestant):
 def get_random_number():
     return random.randrange(100000, 999999)
 
+
+def sweepstakes_name():
+    name = input("What is the name of the sweepstakes?\n: ")
+    if name != "":
+        return name
+    else:
+        sweepstakes_name()
+
+
