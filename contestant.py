@@ -1,5 +1,3 @@
-
-
 class Contestant:
     def __init__(self):
         self.first_name = ""

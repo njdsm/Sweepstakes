@@ -1,6 +1,4 @@
 import random
-from sweepstakes_queue_manager import SweepstakesQueueManager
-from sweepstakes_stack_manager import SweepstakesStackManager
 # This file will hold the function for user interface and prompts
 
 

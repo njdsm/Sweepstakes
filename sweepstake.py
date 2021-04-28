@@ -24,6 +24,7 @@ class Sweepstake:
         print(contestant.first_name)
         print(contestant.last_name)
         print(contestant.email_address)
+        print(contestant.registration_number)
 
     def announce_winner(self, winner):
         for contestant in self.contestants:
@@ -31,4 +32,4 @@ class Sweepstake:
                 self.contestants[contestant].notify("You are the winner!")
             else:
                 self.contestants[contestant].notify(f"Congrats to {winner.first_name} {winner.last_name}. "
-                                  f"They won the {self.name} sweepstake!")
+                                                    f"They won the {self.name} sweepstake!")
