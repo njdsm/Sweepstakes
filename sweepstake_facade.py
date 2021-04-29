@@ -4,7 +4,10 @@ from sweepstake import Sweepstake
 
 class SweepstakeFacade:
     def __init__(self):
-        self.sweepstake = Sweepstake(user_interface.sweepstakes_name())
+        pass
+
+    def create_sweepstake(self):
+        return Sweepstake(user_interface.sweepstakes_name())
 
     def assign_contestant(self):
         self.sweepstake.register_contestant()
