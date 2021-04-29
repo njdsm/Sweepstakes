@@ -22,3 +22,10 @@ def sweepstakes_name():
         sweepstakes_name()
 
 
+def prompt():
+    print("What would you like to do?\n"
+          "1: Create new sweepstake\n"
+          "2. Add contestant to existing sweepstake\n"
+          "3. Generate a winner for a sweepstake\n"
+          "4. Quit\n")
+

@@ -1,7 +1,4 @@
 from sweepstake import Sweepstake
-from sweepstakes_queue_manager import SweepstakesQueueManager
-from sweepstakes_stack_manager import SweepstakesStackManager
-from sweepstake_facade import SweepstakeFacade
 
 
 class MarketingFirm:
@@ -12,7 +9,5 @@ class MarketingFirm:
         self.manager = manager
 
     def create_sweepstakes(self, name):
-        new_sweepstake = SweepstakeFacade()
-        new_sweepstake = new_sweepstake.create_sweepstake()
+        new_sweepstake = Sweepstake(name)
         self.manager.insert_sweepstakes(new_sweepstake)
-        return new_sweepstake
